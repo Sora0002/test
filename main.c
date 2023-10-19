@@ -5,7 +5,7 @@
  * @argc: args count
  *
  * Return: 0 on success
-*/
+ */
 int main(int argc, char **argv)
 {
 	int r = 0;
@@ -17,6 +17,7 @@ int main(int argc, char **argv)
 		r = mergeF(argv, index, r);
 		if (r == -1)
 		{
+			r = 0;
 			continue;
 		}
 		index++;
