@@ -53,7 +53,9 @@ char *_itoa(int num, char *str, int base)
 }
 /**
  * prr - function to print error
- *
+ * @argv: ....
+ * @cmd: ....
+ * @index: .....
  * Return: void
  */
 void prr(char *argv, char *cmd, int index)
@@ -68,14 +70,16 @@ void prr(char *argv, char *cmd, int index)
 		return;
 	}
 	_itoa(index, i, 10);
+	errs[0] = _strdup(argv);
+	errs[1] = _strdup(": ");
+	errs[2] = _strdup(i);
+	errs[3] = _strdup(": ");
+	errs[4] = _strdup(cmd);
+	errs[5] = _strdup(": ");
+	errs[6] = _strdup("not found\n");
 	errs[7] = NULL;
-	if ((errs[0] = _strdup(argv)) &&
-		(errs[1] = _strdup(": ")) &&
-		(errs[2] = _strdup(i)) &&
-		(errs[3] = _strdup(": ")) &&
-		(errs[4] = _strdup(cmd)) &&
-		(errs[5] = _strdup(": ")) &&
-		(errs[6] = _strdup("not found\n")))
+	if (errs[0] && errs[1] && errs[2]
+	&& errs[3] && errs[4] && errs[5] && errs[6])
 	{
 		while (errs[a] && a < maxErrs)
 		{

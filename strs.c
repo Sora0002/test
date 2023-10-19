@@ -84,7 +84,7 @@ char *_strcat(char *dest, const char *src)
 }
 
 /**
- * _strcpy: function simular to strcpy
+ * _strcpy - function simular to strcpy
  * @dest: destination
  * @src: source
  *

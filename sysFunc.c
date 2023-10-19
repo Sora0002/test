@@ -83,6 +83,7 @@ char **tokn(char *line)
  * run_func - a function to execute a program
  * @c: the command
  * @argv: the arg value
+ * @index: 0000
  *
  * Return: status
  */
