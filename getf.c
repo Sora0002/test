@@ -13,7 +13,7 @@ char *_getenv(char *key)
 
 	while (environ[i])
 	{
-		*t = strdup(environ[i]);
+		t = strdup(environ[i]);
 		cle = strtok(t, "=");
 		if (cle != NULL && strcmp(cle, key) == 0)
 		{
