@@ -12,7 +12,6 @@
 #include <sys/types.h>
 /* buffers size */
 #define buf_size 1024
-char *b[] = {"exit", "env", NULL};
 extern char **environ;
 
 void displayP(void);
