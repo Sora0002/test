@@ -29,5 +29,9 @@ char *verP(char *command);
 char *_strcpy(char *dest, const char *src);
 char *_itoa(int num, char *str, int base);
 void prr(char *argv, char *cmd, int index);
-
+void hand(char **argv, char **cmd, int s, char *line, int index);
+int checking(char *cmd);
+int _atoi(char *s);
+void berr(char *argv, char *cmd, int index, char *s);
+void freearr2(char **cmd);
 #endif

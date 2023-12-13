@@ -114,6 +114,7 @@ int run_func(char **c, char **argv, int index)
 				free(c[i]), c[i] = NULL;
 			}
 			free(c), c = NULL;
+			exit(EXIT_FAILURE);
 		}
 	}
 	else
